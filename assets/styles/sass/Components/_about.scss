@@ -1,0 +1,43 @@
+.about-content__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    gap: 120px;
+}
+
+.about-content__pets {
+    margin-left: 175px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    gap: 25px;
+    margin-right: 175px;
+}
+
+.about-content__heading {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $size-h3;
+    letter-spacing: 0.06em;
+    line-height: 130%;
+    margin: 0;
+}
+
+.about-content__subheadung {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $size-h5;
+    line-height: 160%;
+    margin: 0;
+}

@@ -1,0 +1,48 @@
+.help-content {
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    margin-left: 87p;
+    margin-right: 87px;
+}
+
+.help__heading {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $size-h3;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.help__list-container {
+    .help__list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        column-gap: 120px;
+        row-gap: 55px;
+        .help-list__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.06em;
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: $size-h4;
+            color: $color-dark-l;
+            line-height: 115%;
+            row-gap: 30px;
+            .help-list__icon {}
+        }
+    }
+}

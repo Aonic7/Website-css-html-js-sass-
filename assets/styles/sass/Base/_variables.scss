@@ -1,0 +1,44 @@
+//screen scales 
+$content-width:1200px;
+$screen-xs: 0;
+$screen-mobile: 480px;
+$screen-tablet: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+//main colors settings 
+// c - color; s-size
+$color-light-xl:#FFFFFF;
+$color-light-l:#F6F6F6;
+$color-light-s:#FAFAFA;
+$color-dark-s:#CDCDCD;
+$color-dark-m:#B2B2B2;
+$color-dark-l: #545454;
+$color-dark-xl:#4C4C4C;
+$color-dark-2xl:#444444;
+$color-black:#000000;
+$color-dark-3xl:#292929;
+$color-primary-light:#FDDCC4;
+$color-primary:#F1CDB3;
+$start-screen-gradient-background:url(noise_lines_transparent@2X.png),
+radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%, #211F20);
+$c-btn_color:#F1CDB3;
+$c-btn_hover: #FDDCC4;
+$c-btn_innerboard:#F1CDB3;
+$c-btn_innerboard:2px;
+$c-btn-arrow_innerboard:#CDCDCD;
+//main font settings
+$size-h2:44px;
+$size-h3:35px;
+$size-h4:20px;
+$size-h5:15px;
+$size-l_pargraph:15px;
+$size-s_pargraph:12px;
+$size-list_item:15px;
+$size-pets-big_button_title:17px; //logo font setting
+$font-logo :Arial;
+$weight-logo:400;
+$size-logo_title:32px;
+$line-height-logo_title: 110%;
+$letter-spacing-logo_title: 0.06em;
+$size-logo_subtitle:13px;
+$letter-spacing-logo_subtitle: 0.1em;

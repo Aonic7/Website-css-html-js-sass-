@@ -1,0 +1,57 @@
+.main-header {
+    padding-top: 60px;
+}
+
+.main-header__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-header__logo {
+    display: block;
+    cursor: pointer;
+    .logo__title {
+        font-family: "Georgia", sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 110%;
+        letter-spacing: $letter-spacing-logo_title;
+        color: $color-primary;
+    }
+    .logo__subtitle {
+        font-family: "Arial", sans-serif;
+        font-size: 13px;
+        line-height: 110%;
+        color: $color-light-xl;
+        letter-spacing: $letter-spacing-logo_subtitle;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+.main-header__nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    .nav__link {
+        font-family: "Arial", sans-serif;
+        font-size: $size-h5;
+        line-height: 160%;
+        color: $color-dark-s;
+        transition: color 0.3s ease-in-out;
+    }
+    .nav__link--active {
+        font-family: "Arial", sans-serif;
+        font-size: $size-h5;
+        line-height: 160%;
+        color: $color-light-s;
+        border-bottom: 3px solid $color-primary;
+    }
+    a {
+        text-decoration: none;
+    }
+}
