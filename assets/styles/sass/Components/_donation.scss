@@ -1,3 +1,70 @@
 .section_donation {
     background: $color-light-l;
 }
+
+.donation__container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    margin-right: 165px;
+    margin-left: 150px;
+}
+
+.donation_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.donation__heading {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $size-h3;
+    line-height: 130%;
+    color: $color-dark-l;
+    letter-spacing: $letter-spacing-heading;
+}
+
+.donation__subheading {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    $size-h5: 15px;
+    line-height: 110%;
+    color: $color-dark-l;
+}
+
+.donation__credit-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .credit-card__content {
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        gap: 15px;
+        background-color: $color-primary;
+        border-radius: 9px;
+        .credit-card__number {
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            color: $color-dark-l;
+            letter-spacing: 0.06em;
+        }
+    }
+}
+
+.credit-card__legal {
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: $size-s_pargraph;
+    line-height: 18px;
+    align-items: center;
+    color: $color-dark-m;
+}

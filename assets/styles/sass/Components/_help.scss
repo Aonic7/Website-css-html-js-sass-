@@ -4,9 +4,7 @@
     align-items: center;
     text-align: center;
     margin-top: 80px;
-    margin-bottom: 100px;
-    margin-left: 87p;
-    margin-right: 87px;
+    margin-bottom: 92px;
 }
 
 .help__heading {
@@ -15,7 +13,9 @@
     font-weight: 400;
     font-size: $size-h3;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
+    letter-spacing: 0.06em;
+    line-height: 130%;
 }
 
 .help__list-container {
@@ -27,7 +27,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        column-gap: 120px;
+        column-gap: 105px;
         row-gap: 55px;
         .help-list__item {
             display: flex;
@@ -42,7 +42,6 @@
             color: $color-dark-l;
             line-height: 115%;
             row-gap: 30px;
-            .help-list__icon {}
         }
     }
 }
