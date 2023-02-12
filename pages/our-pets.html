@@ -128,17 +128,17 @@
                             </div>
                         </div>
 
+                   
                         <!-- pagination elements -->
-                        <div class="pagination_section">
-                            <a href="#" role="button" data-slide="prev">
-                                << </a>
-                                    <a href="#">
-                                        < </a>
-                                            <a href="#" title="Interview" class="active">1</a>
-                                            <a href="#" role="button" data-slide="tolast">
-                                            ></a> <a href="#" role="button" data-slide="next">
-                                        >></a>
-                        </div>
+                        
+                        <div class="pagination_container">
+                                <button id="button_min" onclick="minPage()" disabled><<</button>
+                                <button id="button_minus" onclick="minus()" disabled><</button>
+                                <button class="paginator" id="paginator">1</button>
+                                <button id="button_plus" onclick="plus()">></button>
+                                <button id="button_max" onclick="maxPage()">>></button>
+                        </div>    
+                        
 
                     </div>
                 </div>
@@ -181,5 +181,4 @@
         </div>
     </footer>
 </body>
-
 </html>

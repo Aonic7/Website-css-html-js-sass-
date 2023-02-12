@@ -210,27 +210,43 @@
              }
          }
      }
-     /* pagination styling */
-     .pagination_section a {
-         font-size: $size-h4;
-         font-family: Georgia;
-         color: $color-dark-s;
-         text-decoration: none;
-     }
-     /* pagination hover effect on non-active */
-     .pagination_section a:hover:not(.active) {
-         border: 2px solid $color-dark-s;
-         border-radius: 100px;
-     }
-     /* pagination hover effect on active*/
-     a:nth-child(5) {
-         background: $color-light-s;
-         border-radius: 9px;
-     }
-     a:nth-child(1) {
-         font-weight: bold;
-     }
-     a:nth-child(7) {
-         font-weight: bold;
-     }
+
  }
+ 
+ .pagination_container {
+	width: 340px;
+	margin: 60px auto 100px auto;
+	display: flex;
+	justify-content: space-between;
+}
+.pagination_container button {
+	text-align: center;
+	vertical-align: middle;
+	width: 52px;
+	height: 52px;
+	border-radius: 100px;
+	border: 2px solid #F1CDB3;
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 115%;
+	letter-spacing: 0.06em;
+}
+
+
+button:disabled,button[disabled] {
+	border: 2px solid #CDCDCD;
+
+}
+.pagination_container button:hover {
+	
+}
+.paginator {
+	background: #F1CDB3;
+}
+
+button:not(:disabled):hover {
+	background: #F1CDB3;
+	cursor: pointer;
+}
