@@ -10,7 +10,7 @@
 
 .main-header__logo {
     display: block;
-    cursor: pointer;
+     
     .logo__title {
         font-family: "Georgia", sans-serif;
         font-weight: 400;
@@ -80,8 +80,14 @@
         font-style: normal;
         font-size: $size-h5;
         line-height: 160%;
-        color: $color-dark-3xl;
+        color: $color-dark-l;
         border-bottom: 3px solid $color-primary;
+    }
+    .nav__link-dark:hover{
+       color:$color-dark-3xl;
+    }
+    .nav__link:hover{
+        color:$color-light-s;
     }
     a {
         text-decoration: none;
