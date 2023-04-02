@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 92px;
+    margin-top: 8rem;
+    margin-bottom: 9.2rem;
 }
 
 .help__heading {
@@ -13,7 +13,7 @@
     font-weight: 400;
     font-size: $size-h3;
     align-items: center;
-    margin-bottom: 58px;
+    margin-bottom: 5.8rem;
     letter-spacing: 0.06em;
     line-height: 130%;
 }
@@ -27,8 +27,8 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        column-gap: 120px;
-        row-gap: 55px;
+        column-gap: 12rem;
+        row-gap: 5.5rem;
         .help-list__item {
             display: flex;
             flex-direction: column;
@@ -41,7 +41,7 @@
             font-size: $size-h4;
             color: $color-dark-l;
             line-height: 115%;
-            row-gap: 30px;
+            row-gap: 3rem;
         }
     }
 }
