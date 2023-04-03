@@ -138,55 +138,6 @@ h5 {
   font-weight: 400;
 }
 
-html {
-  font-size: 10px;
-  scroll-behavior: smooth;
-}
-
-body {
-  position: relative;
-  font-size: 1.5rem;
-  letter-spacing: 0rem;
-  line-height: 160%;
-  font-weight: 400;
-  color: #545454;
-}
-
-h1 {
-  font-size: 3.2rem;
-  letter-spacing: 0.06em;
-  line-height: 110%;
-  font-weight: 400;
-}
-
-h2 {
-  font-size: 4.4rem;
-  letter-spacing: -0.0006em;
-  line-height: 130%;
-  font-weight: 400;
-}
-
-h3 {
-  font-size: 3.5rem;
-  letter-spacing: 0.06em;
-  line-height: 129%;
-  font-weight: 400;
-}
-
-h4 {
-  font-size: 2rem;
-  letter-spacing: 0.06em;
-  line-height: 2.3rem;
-  font-weight: 400;
-}
-
-h5 {
-  font-size: 1.5rem;
-  letter-spacing: 0;
-  line-height: 110%;
-  font-weight: 400;
-}
-
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
@@ -423,6 +374,7 @@ h5 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  margin-top: 6rem;
   margin-top: 6rem;
 }
 
