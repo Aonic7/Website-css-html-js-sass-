@@ -1,24 +1,31 @@
 .start-screen__container {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 60px;
+    align-items: flex-start;
+    margin-top: 6rem;
 }
 
 .start-screen__content {
+    max-width: 46rem;
     display: flex;
     flex-direction: column;
-    margin-top: 163px;
-    padding-right: 42px;
-    gap: 42px;
+    padding-top: 16.4rem;
+    align-items: flex-start;
+    gap: 4.2rem;
 }
-
+.start-screen__puppy{
+    max-width: 100%;
+    height: auto;
+}
 .start-screen__heading {
+    max-width: 31rem;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
-    font-size: $size-h2;
     line-height: 130%;
+    font-size: $size-h2;
     margin: 0;
     color: $color-light-xl;
 }
@@ -28,27 +35,29 @@
     font-style: normal;
     font-weight: 400;
     font-size: $size-h5;
-    line-height: 160%;
-    margin: 0;
-    color: $color-dark-s;
+    color: $color-light-l;
 }
 
 .start-screen__button-primary {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 207px;
-    height: 52px;
+    width: 20.7rem;
+    height: 5.2rem;
     background: #F1CDB3;
     border-radius: 100px;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 1.7rem;
     line-height: 130%;
     letter-spacing: 0.06em;
     /* color-dark-3xl */
     color: $color-dark-3xl;
     text-align: center;
     text-decoration: none;
+}
+
+.start-screen__button-primary:hover {
+    background-color: $color-primary-light;
 }
