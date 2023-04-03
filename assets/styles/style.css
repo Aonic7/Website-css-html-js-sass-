@@ -139,7 +139,7 @@ h5 {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -147,8 +147,19 @@ h5 {
   background: url(/assets/images/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), linear-gradient(0deg, #211f20, #211f20);
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  /*  styles for screens with a width between 768px and 1279px go here */
+}
+/* styles for screens with a maximum width of 767px */
+@media only screen and (max-width: 767px) {
+  /* your styles for screens with a width between 320px and 767px go here */
+}
+/* styles for screens with a maximum width of 320px */
+@media only screen and (max-width: 320px) {
+  /* your styles for screens with a width of 320px and below go here */
+}
 .main-header {
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 
 .main-header__container {
@@ -248,27 +259,145 @@ h5 {
   text-decoration: none;
 }
 
+/* styles for screens with a minimum width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .main-header {
+    padding-top: 3rem;
+  }
+  .main-header__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main-header__logo {
+    display: block;
+  }
+  .main-header__logo .logo__title {
+    font-family: "Georgia", sans-serif;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+  }
+  .main-header__logo .logo__title-dark {
+    font-family: "Georgia", sans-serif;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #545454;
+  }
+  .main-header__logo .logo__subtitle {
+    font-family: "Arial", sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: #FFFFFF;
+    letter-spacing: 0.1em;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+  }
+  .main-header__logo .logo__subtitle-dark {
+    font-family: "Arial";
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: #545454;
+    letter-spacing: 0.1em;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+  }
+  .main-header__logo a {
+    text-decoration: none;
+  }
+  .main-header__nav {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+  }
+  .main-header__nav .nav__link {
+    font-family: "Arial", sans-serif;
+    font-size: 1.5rem;
+    line-height: 160%;
+    color: #CDCDCD;
+    transition: color 0.7s ease-in-out;
+  }
+  .main-header__nav .nav__link--active {
+    border-bottom: solid 2px #F1CDB3;
+    color: #FAFAFA;
+  }
+  .main-header__nav .nav__link:active {
+    font-family: "Arial", sans-serif;
+    font-size: 1.5rem;
+    line-height: 160%;
+    color: #FAFAFA;
+    border-bottom: 3px solid #F1CDB3;
+  }
+  .main-header__nav .nav__link:hover {
+    color: #FAFAFA;
+    border-bottom: solid 2px #F1CDB3;
+  }
+  .main-header__nav .nav__link-dark {
+    font-family: "Arial", sans-serif;
+    font-size: 1.5rem;
+    line-height: 160%;
+    color: #545454;
+    transition: color 0.7s ease-in-out;
+  }
+  .main-header__nav .nav__link-dark:active {
+    font-family: "Arial";
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 160%;
+    color: #545454;
+    border-bottom: 3px solid #F1CDB3;
+  }
+  .main-header__nav .nav__link-dark:hover {
+    color: #292929;
+    border-bottom: solid 2px #F1CDB3;
+  }
+  .main-header__nav a {
+    text-decoration: none;
+  }
+  /* your styles for screens with a width between 768px and 1279px go here */
+}
+/* styles for screens with a maximum width of 767px */
+@media only screen and (max-width: 767px) {
+  /* your styles for screens with a width between 320px and 767px go here */
+}
+/* styles for screens with a maximum width of 320px */
+@media only screen and (max-width: 320px) {
+  /* your styles for screens with a width of 320px and below go here */
+}
 .start-screen__container {
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
   margin-top: 6rem;
 }
 
 .start-screen__content {
+  max-width: 46rem;
   display: flex;
   flex-direction: column;
-  margin-top: 16.3rem;
-  padding-right: 4.2rem;
+  padding-top: 16.4rem;
+  align-items: flex-start;
   gap: 4.2rem;
 }
 
+.start-screen__puppy {
+  max-width: 100%;
+  height: auto;
+}
+
 .start-screen__heading {
+  max-width: 31rem;
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
-  font-size: 4.4rem;
   line-height: 130%;
+  font-size: 4.4rem;
   margin: 0;
   color: #FFFFFF;
 }
@@ -278,9 +407,7 @@ h5 {
   font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;
-  line-height: 160%;
-  margin: 0;
-  color: #CDCDCD;
+  color: #F6F6F6;
 }
 
 .start-screen__button-primary {
@@ -307,29 +434,28 @@ h5 {
   background-color: #FDDCC4;
 }
 
-.about-content__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  align-items: center;
-  align-content: center;
-  margin-top: 80px;
-  margin-bottom: 100px;
-  gap: 120px;
+.section__about {
+  padding: 8rem 0 10rem 0;
 }
 
-.about-content__pets {
-  margin-left: 175px;
+.about-content__container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about-content__pets-img {
+  margin-right: 12rem;
 }
 
 .about-content {
+  max-width: 43rem;
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  flex-wrap: nowrap;
-  gap: 25px;
-  margin-right: 175px;
+  gap: 2.4rem;
 }
 
 .about-content__heading {
@@ -351,6 +477,17 @@ h5 {
   margin: 0;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  /* styles for screens with a width between 768px and 1279px go here */
+}
+/* styles for screens with a maximum width of 767px */
+@media only screen and (max-width: 767px) {
+  /* your styles for screens with a width between 320px and 767px go here */
+}
+/* styles for screens with a maximum width of 320px */
+@media only screen and (max-width: 320px) {
+  /* your styles for screens with a width of 320px and below go here */
+}
 .section__pets {
   background: #F6F6F6;
 }
