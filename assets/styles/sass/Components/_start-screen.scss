@@ -5,19 +5,16 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 6rem;
+    margin-top: 6rem;
 }
 
 .start-screen__content {
     max-width: 46rem;
     display: flex;
     flex-direction: column;
-    padding-top: 16.4rem;
-    align-items: flex-start;
+    margin-top: 16.3rem;
+    padding-right: 4.2rem;
     gap: 4.2rem;
-}
-.start-screen__puppy{
-    max-width: 100%;
-    height: auto;
 }
 .start-screen__heading {
     max-width: 31rem;
