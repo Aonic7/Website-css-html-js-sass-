@@ -19,14 +19,13 @@
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    gap: 2.4rem;
+    gap: 2.5rem;
 }
 
 .about-content__heading {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
-    font-size: $size-h3;
     letter-spacing: 0.06em;
     line-height: 130%;
     margin: 0;
@@ -35,8 +34,6 @@
 .about-content__subheadung {
     font-family: 'Arial';
     font-style: normal;
-    font-weight: 400;
-    font-size: $size-h5;
     line-height: 160%;
     margin: 0;
 }
@@ -44,10 +41,14 @@
 
 
 
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1250px) {
     /* styles for screens with a width between 768px and 1279px go here */
-     
-
+    .about-content__container {
+       gap: 8rem;
+    }
+    .about-content__pets-img {
+        margin-right: 0rem;
+    }
 }
   
   /* styles for screens with a maximum width of 767px */

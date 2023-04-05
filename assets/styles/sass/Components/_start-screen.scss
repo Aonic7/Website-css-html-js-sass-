@@ -61,3 +61,29 @@
 .start-screen__button-primary:hover {
     background-color: $color-primary-light;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1250px) {
+    /*  styles for screens with a width between 768px and 1279px go here */
+    .start-screen__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6rem;
+        gap: 10rem;
+    }
+    
+    .start-screen__content {
+        padding-top: 0rem;
+        gap: 4.2rem;
+    }
+    .start-screen__puppy{
+        max-width: 569px;
+        max-height: 593px;
+        align-self: flex-end;
+    }
+    .start-screen__button-primary {
+        align-self: center;
+    }
+  }
+
+  

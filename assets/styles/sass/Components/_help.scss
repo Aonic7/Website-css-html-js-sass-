@@ -4,7 +4,7 @@
     align-items: center;
     text-align: center;
     margin-top: 8rem;
-    margin-bottom: 9.2rem;
+    margin-bottom: 10rem;
 }
 
 .help__heading {
@@ -13,7 +13,7 @@
     font-weight: 400;
     font-size: $size-h3;
     align-items: center;
-    margin-bottom: 5.8rem;
+    margin-bottom: 6rem;
     letter-spacing: 0.06em;
     line-height: 130%;
 }
@@ -42,6 +42,22 @@
             color: $color-dark-l;
             line-height: 115%;
             row-gap: 3rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1250px) {
+    /*  styles for screens with a width between 768px and 1279px go here */
+    .help-content {
+        max-width: 680px;
+        max-height: 599px;
+    }
+    
+    .help__list-container .help__list {
+        column-gap: 6rem;
+        .help-list__item{
+            width: 17rem;
+            height: 11.3rem;
         }
     }
 }
