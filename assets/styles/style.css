@@ -148,7 +148,7 @@ h5 {
   background: url(/assets/images/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), linear-gradient(0deg, #211f20, #211f20);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1250px) {
+@media only screen and (min-width: 767px) and (max-width: 1250px) {
   /*  styles for screens with a width between 768px and 1279px go here */
   .wrapper {
     max-width: 708px;
@@ -264,7 +264,7 @@ h5 {
 }
 
 /* styles for screens with a minimum width of 768px */
-@media only screen and (min-width: 768px) and (max-width: 1250px) {
+@media only screen and (min-width: 767px) and (max-width: 1250px) {
   .main-header {
     padding-top: 3rem;
   }
@@ -276,13 +276,6 @@ h5 {
   /* your styles for screens with a width between 768px and 1279px go here */
 }
 /* styles for screens with a maximum width of 767px */
-@media only screen and (max-width: 767px) {
-  /* your styles for screens with a width between 320px and 767px go here */
-}
-/* styles for screens with a maximum width of 320px */
-@media only screen and (max-width: 320px) {
-  /* your styles for screens with a width of 320px and below go here */
-}
 .start-screen__container {
   width: 100%;
   display: flex;
@@ -349,7 +342,7 @@ h5 {
   background-color: #FDDCC4;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1250px) {
+@media only screen and (min-width: 767px) and (max-width: 1250px) {
   /*  styles for screens with a width between 768px and 1279px go here */
   .start-screen__container {
     flex-direction: column;
@@ -696,7 +689,7 @@ button:not(:disabled):hover {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1250px) {
+@media only screen and (min-width: 767px) and (max-width: 1250px) {
   /*  styles for screens with a width between 768px and 1279px go here */
   .pets__content {
     max-width: 708px;

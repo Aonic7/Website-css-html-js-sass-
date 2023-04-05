@@ -105,7 +105,7 @@
 
   /* styles for screens with a minimum width of 768px */
   
- @media only screen and (min-width: 768px) and (max-width: 1250px) {
+ @media only screen and (min-width: 767px) and (max-width: 1250px) {
     .main-header {
         padding-top: 3rem;
     }
@@ -120,12 +120,6 @@
   
   /* styles for screens with a maximum width of 767px */
   
-  @media only screen and (max-width: 767px) {
-    /* your styles for screens with a width between 320px and 767px go here */
-  }
-  
-  /* styles for screens with a maximum width of 320px */
-  
-  @media only screen and (max-width: 320px) {
-    /* your styles for screens with a width of 320px and below go here */
+  @media only screen and (min-width: 319px) and (max-width: 767px){
+      
   }
