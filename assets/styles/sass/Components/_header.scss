@@ -105,7 +105,7 @@
 
   /* styles for screens with a minimum width of 768px */
   
-  @media only screen and (min-width: 768px) and (max-width: 1279px) {
+ @media only screen and (min-width: 767px) and (max-width: 1250px) {
     .main-header {
         padding-top: 3rem;
     }
@@ -115,111 +115,11 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
-    .main-header__logo {
-        display: block;
-         
-        .logo__title {
-            font-family: "Georgia", sans-serif;
-            font-weight: 400;
-            font-size: 3.2rem;
-            line-height: 110%;
-            letter-spacing: $letter-spacing-logo_title;
-            color: $color-primary;
-        }
-        .logo__title-dark {
-            font-family: "Georgia", sans-serif;
-            font-weight: 400;
-            font-size: 3.2rem;
-            line-height: 110%;
-            letter-spacing: $letter-spacing-logo_title;
-            color: $color-dark-l;
-        }
-        .logo__subtitle {
-            font-family: "Arial", sans-serif;
-            font-size: 1.3rem;
-            line-height: 1.5rem;
-            color: $color-light-xl;
-            letter-spacing: $letter-spacing-logo_subtitle;
-            margin-top: 1rem;
-            margin-bottom: 0px;
-        }
-        .logo__subtitle-dark {
-            font-family: "Arial";
-            font-size: 1.3rem;
-            line-height: 1.5rem;
-            color: $color-dark-l;
-            letter-spacing: $letter-spacing-logo_subtitle;
-            margin-top: 1rem;
-            margin-bottom: 0px;
-        }
-        a {
-            text-decoration: none;
-        }
-    }
-    
-    .main-header__nav {
-        display: flex;
-        align-items: center;
-        gap: 3.5rem;
-        .nav__link {
-            font-family: "Arial", sans-serif;
-            font-size: $size-h5;
-            line-height: 160%;
-            color: $color-dark-s;
-            transition: color 0.7s ease-in-out;
-           
-        }
-        .nav__link--active {
-            border-bottom: solid 2px $color-primary;
-            color: $color-light-s;
-        }
-        .nav__link:active {
-            font-family: "Arial", sans-serif;
-            font-size: $size-h5;
-            line-height: 160%;
-            color: $color-light-s;
-            border-bottom: 3px solid $color-primary;
-        }
-        .nav__link:hover{
-            color:$color-light-s;
-            border-bottom: solid 2px $color-primary;
-        }
-        .nav__link-dark {
-            font-family: "Arial", sans-serif;
-            font-size: $size-h5;
-            line-height: 160%;
-            color: $color-dark-l;
-            transition: color 0.7s ease-in-out;
-        }
-        .nav__link-dark:active {
-            font-family: "Arial";
-            font-style: normal;
-            font-size: $size-h5;
-            line-height: 160%;
-            color: $color-dark-l;
-            border-bottom: 3px solid $color-primary;
-        }
-        .nav__link-dark:hover{
-           color:$color-dark-3xl;
-           border-bottom: solid 2px $color-primary;
-        }
-        
-        a {
-            text-decoration: none;
-        }
-    }
     /* your styles for screens with a width between 768px and 1279px go here */
   }
   
   /* styles for screens with a maximum width of 767px */
   
-  @media only screen and (max-width: 767px) {
-    /* your styles for screens with a width between 320px and 767px go here */
-  }
-  
-  /* styles for screens with a maximum width of 320px */
-  
-  @media only screen and (max-width: 320px) {
-    /* your styles for screens with a width of 320px and below go here */
+  @media only screen and (min-width: 319px) and (max-width: 767px){
+      
   }
