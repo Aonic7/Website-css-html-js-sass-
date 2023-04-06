@@ -18,6 +18,7 @@
         font-family: 'Georgia';
         font-style: normal;
         color: $color-light-xl;
+        margin: 0;
     }
     
     .contacts__details {
@@ -26,9 +27,7 @@
         align-items: center;
         gap: 20px;
     }
-    .contacts__details:last-child{
-       margin-bottom: 60px;
-    }
+ 
     .contact_data {
         font-family: 'Georgia';
         font-style: normal;
@@ -56,17 +55,15 @@
         line-height: 130%;
         letter-spacing: 0.06em;
         color: $color-light-xl;
+        margin: 0;
     }
 
     @media only screen and (min-width: 768px) and (max-width: 1279px) {
         .main-footer__content {
-            gap: 6rem;
+            gap: 6.5rem;
             padding-top: 3rem;
         }
 
-        .main-footer__content:last-child {
-            gap: 65px;
-        }
         .main-footer__puppy{
             margin-left:auto;
             margin-right: auto;

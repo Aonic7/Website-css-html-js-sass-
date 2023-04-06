@@ -164,7 +164,12 @@ h5 {
   /* your styles for screens with a width of 320px and below go here */
 }
 .main-header {
+  padding-top: 6rem;
+}
+
+.main-header-pet {
   padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .main-header__container {
@@ -292,7 +297,6 @@ h5 {
   display: flex;
   flex-direction: column;
   margin-top: 16.3rem;
-  padding-right: 4.2rem;
   gap: 4.2rem;
 }
 
@@ -691,6 +695,7 @@ button:not(:disabled):hover {
   /*  styles for screens with a width between 768px and 1279px go here */
   .pets__content {
     max-width: 708px;
+    gap: 3rem;
   }
   .pets__content .pets__slider {
     display: flex;
@@ -708,6 +713,15 @@ button:not(:disabled):hover {
   }
   .pets__content .slider__wrapper .slider__items {
     gap: 4rem;
+  }
+  .slider__wrapper-ourpets .pets__cards {
+    justify-content: center;
+  }
+  .slider__wrapper-ourpets .pets__card:nth-last-child(-n+2) {
+    display: none;
+  }
+  .pagination_container {
+    margin: 4rem auto 7.6rem auto;
   }
 }
 .help-content {
@@ -870,6 +884,7 @@ button:not(:disabled):hover {
   font-family: "Georgia";
   font-style: normal;
   color: #FFFFFF;
+  margin: 0;
 }
 
 .contacts__details {
@@ -877,10 +892,6 @@ button:not(:disabled):hover {
   list-style: none;
   align-items: center;
   gap: 20px;
-}
-
-.contacts__details:last-child {
-  margin-bottom: 60px;
 }
 
 .contact_data {
@@ -912,15 +923,13 @@ button:not(:disabled):hover {
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #FFFFFF;
+  margin: 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
   .main-footer__content {
-    gap: 6rem;
+    gap: 6.5rem;
     padding-top: 3rem;
-  }
-  .main-footer__content:last-child {
-    gap: 65px;
   }
   .main-footer__puppy {
     margin-left: auto;
