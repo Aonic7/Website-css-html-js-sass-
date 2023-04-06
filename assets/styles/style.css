@@ -156,8 +156,11 @@ h5 {
   }
 }
 /* styles for screens with a maximum width of 767px */
-@media only screen and (max-width: 767px) {
-  /* your styles for screens with a width between 320px and 767px go here */
+@media only screen and (min-width: 240px) and (max-width: 767px) {
+  .wrapper {
+    max-width: 300px;
+    padding: 0 10px;
+  }
 }
 /* styles for screens with a maximum width of 320px */
 @media only screen and (max-width: 320px) {
@@ -170,6 +173,10 @@ h5 {
 .main-header-pet {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.nav__toggle {
+  display: none;
 }
 
 .main-header__container {
@@ -275,19 +282,34 @@ h5 {
     padding-top: 3rem;
   }
   .main-header__container {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
   /* your styles for screens with a width between 768px and 1279px go here */
 }
 /* styles for screens with a maximum width of 767px */
+@media only screen and (min-width: 240px) and (max-width: 767px) {
+  .main-header__container {
+    align-items: center;
+  }
+  .main-header__nav {
+    display: none;
+  }
+  .nav__toggle {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 4.3rem;
+  }
+}
 .start-screen__container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
   margin-top: 6rem;
   margin-top: 6rem;
 }
@@ -366,6 +388,33 @@ h5 {
     align-self: center;
   }
 }
+@media only screen and (min-width: 240px) and (max-width: 767px) {
+  .start-screen__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    gap: 10rem;
+  }
+  .start-screen__content {
+    align-items: center;
+    padding-top: 0rem;
+    margin-top: 0rem;
+    gap: 4.2rem;
+  }
+  .start-screen__heading {
+    font-size: 2.5rem;
+  }
+  .start-screen__subheading {
+    font-size: 1.5rem;
+    color: #F6F6F6;
+  }
+  .start-screen__puppy {
+    max-width: 260px;
+    max-height: 271.77px;
+    justify-self: center;
+  }
+}
 .section__about {
   padding: 8rem 0 10rem 0;
 }
@@ -416,8 +465,29 @@ h5 {
   }
 }
 /* styles for screens with a maximum width of 767px */
-@media only screen and (max-width: 767px) {
-  /* your styles for screens with a width between 320px and 767px go here */
+@media only screen and (min-width: 240px) and (max-width: 767px) {
+  .section__about {
+    padding: 4.2rem 0;
+  }
+  .about-content__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .about-content__pets-img {
+    margin-right: 0rem;
+    margin-top: 4.2rem;
+  }
+  .about-content {
+    max-width: 30rem;
+    gap: 2.2rem;
+  }
+  .about-content__heading {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 }
 /* styles for screens with a maximum width of 320px */
 @media only screen and (max-width: 320px) {
@@ -722,6 +792,23 @@ button:not(:disabled):hover {
   }
   .pagination_container {
     margin: 4rem auto 7.6rem auto;
+  }
+}
+@media only screen and (min-width: 240px) and (max-width: 767px) {
+  .pets__content {
+    max-width: 300px;
+  }
+  .pets__content .pets__heading {
+    margin-top: 4.2rem;
+    font-size: 3.5rem;
+    line-height: 130%;
+    text-align: center;
+  }
+  .pets__content .slider__wrapper-ourpets .pets__cards {
+    justify-content: center;
+  }
+  .pets__content .slider__wrapper-ourpets .pets__card:nth-last-child(-n+7) {
+    display: none;
   }
 }
 .help-content {

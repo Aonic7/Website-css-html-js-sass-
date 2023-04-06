@@ -68,8 +68,11 @@ h5 {
   
   /* styles for screens with a maximum width of 767px */
   
-  @media only screen and (max-width: 767px) {
-    /* your styles for screens with a width between 320px and 767px go here */
+  @media only screen and (min-width: 240px) and (max-width: 767px){
+    .wrapper {
+        max-width: 300px;
+        padding: 0 10px;
+    }
   }
   
   /* styles for screens with a maximum width of 320px */

@@ -330,3 +330,24 @@ button:not(:disabled):hover {
      }
    
 }
+
+@media only screen and (min-width: 240px) and (max-width: 767px){
+     .pets__content{
+      max-width: 300px;
+      .pets__heading {
+          margin-top: 4.2rem;
+          font-size: $size-h3;
+          line-height: 130%;
+          text-align: center;
+     }
+     .slider__wrapper-ourpets{
+          .pets__cards {
+          justify-content: center;
+          }
+          .pets__card:nth-last-child(-n+7) {
+               display: none;
+          }
+     } 
+
+     }
+}

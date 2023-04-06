@@ -53,8 +53,32 @@
   
   /* styles for screens with a maximum width of 767px */
   
-  @media only screen and (max-width: 767px) {
-    /* your styles for screens with a width between 320px and 767px go here */
+  @media only screen and (min-width: 240px) and (max-width: 767px) {
+    .section__about{
+        padding: 4.2rem 0;
+    }
+    .about-content__container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .about-content__pets-img {
+      margin-right: 0rem;
+      margin-top: 4.2rem;
+    }
+
+    .about-content {
+        max-width: 30rem;
+        gap: 2.2rem;
+    }
+    .about-content__heading {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
   }
   
   /* styles for screens with a maximum width of 320px */

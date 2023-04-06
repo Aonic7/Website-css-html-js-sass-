@@ -3,7 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
     margin-top: 6rem;
     margin-top: 6rem;
 }
@@ -82,5 +81,39 @@
         align-self: center;
     }
   }
+  
+  @media only screen and (min-width: 240px) and (max-width: 767px){
+
+    .start-screen__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6rem;
+        gap: 10rem;
+    }
+    .start-screen__content {
+        align-items: center;
+        padding-top: 0rem;
+        margin-top: 0rem;
+        gap: 4.2rem;
+    }
+    .start-screen__heading{
+        font-size: 2.5rem;
+    }
+    .start-screen__subheading {
+        font-size: $size-l_pargraph;
+        color: $color-light-l;
+    }
+    
+    .start-screen__button-primary{
+    }
+
+    .start-screen__puppy{
+        max-width: 260px;
+        max-height: 271.77px;
+        justify-self: center;
+    }
+  }
+  
 
   
