@@ -61,3 +61,37 @@
         }
     }
 }
+
+
+@media only screen and (min-width: 240px) and (max-width: 767px){
+    
+    .help__heading{
+        font-size: $h3-mobile;
+        margin-bottom: 4.2rem;
+    }
+    .help-content {
+        max-width: 29rem;
+        margin: 4.2rem 0;
+    }
+    .help__list-container .help__list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+        column-gap: 3rem;
+        row-gap: 6rem;
+        .help-list__item{
+            width: 13rem;
+            height: 8.7rem;
+            row-gap: 2rem;
+            h4{
+                font-size: $size-h5;
+            }
+            
+        }
+    }
+
+}

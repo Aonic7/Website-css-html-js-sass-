@@ -482,7 +482,7 @@ h5 {
   }
   .about-content {
     max-width: 30rem;
-    gap: 2.2rem;
+    gap: 2.5rem;
   }
   .about-content__heading {
     font-size: 2.5rem;
@@ -797,10 +797,37 @@ button:not(:disabled):hover {
 @media only screen and (min-width: 240px) and (max-width: 767px) {
   .pets__content {
     max-width: 300px;
+    gap: 4.2rem;
+  }
+  .pets__content .pets__slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .pets__content .pets__slider .slider__wrapper {
+    justify-self: center;
+  }
+  .pets__content .pets__slider .slider__item {
+    margin-left: 1rem;
+  }
+  .pets__content .pets__slider .slider__control {
+    order: 1;
+  }
+  .pets__content .pets__slider .slider__control .slider__control_prev {
+    margin-right: 3rem;
+  }
+  .pets__content .pets__slider .slider__control .slider__control_prev::after {
+    content: "";
+  }
+  .pets__content .pets__slider .slider__control .slider__control_next {
+    margin-left: 3rem;
   }
   .pets__content .pets__heading {
     margin-top: 4.2rem;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     line-height: 130%;
     text-align: center;
   }
@@ -809,6 +836,13 @@ button:not(:disabled):hover {
   }
   .pets__content .slider__wrapper-ourpets .pets__card:nth-last-child(-n+7) {
     display: none;
+  }
+  .pets__buttons {
+    align-self: center;
+    margin-bottom: 4.2rem;
+  }
+  .pets__buttons .pets__button {
+    max-width: 26rem;
   }
 }
 .help-content {
@@ -871,6 +905,35 @@ button:not(:disabled):hover {
   .help__list-container .help__list .help-list__item {
     width: 17rem;
     height: 11.3rem;
+  }
+}
+@media only screen and (min-width: 240px) and (max-width: 767px) {
+  .help__heading {
+    font-size: 2.5rem;
+    margin-bottom: 4.2rem;
+  }
+  .help-content {
+    max-width: 29rem;
+    margin: 4.2rem 0;
+  }
+  .help__list-container .help__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+    row-gap: 6rem;
+  }
+  .help__list-container .help__list .help-list__item {
+    width: 13rem;
+    height: 8.7rem;
+    row-gap: 2rem;
+  }
+  .help__list-container .help__list .help-list__item h4 {
+    font-size: 1.5rem;
   }
 }
 .section_donation {
@@ -949,6 +1012,30 @@ button:not(:disabled):hover {
     flex-direction: column-reverse;
   }
 }
+@media only screen and (min-width: 240px) and (max-width: 767px) {
+  .donation__container {
+    flex-direction: column-reverse;
+    padding-top: 4.2rem;
+    padding-bottom: 4.2rem;
+    max-width: 30rem;
+  }
+  .donation-icon {
+    max-width: 26rem;
+  }
+  .donation__heading {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .donation__subheading {
+    text-align: center;
+  }
+  .donation_content {
+    max-width: 28rem;
+  }
+  .credit-card__content h4 {
+    font-size: 1.5rem;
+  }
+}
 .main-footer__content {
   display: flex;
   flex-wrap: wrap;
@@ -1017,6 +1104,26 @@ button:not(:disabled):hover {
   .main-footer__content {
     gap: 6.5rem;
     padding-top: 3rem;
+  }
+  .main-footer__puppy {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 240px) and (max-width: 767px) {
+  .contacts__heading {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .locations__heading {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .main-footer__content {
+    gap: 4rem;
+    padding-top: 3rem;
+    justify-content: center;
+    align-items: center;
   }
   .main-footer__puppy {
     margin-left: auto;

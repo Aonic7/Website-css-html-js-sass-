@@ -334,13 +334,45 @@ button:not(:disabled):hover {
 @media only screen and (min-width: 240px) and (max-width: 767px){
      .pets__content{
       max-width: 300px;
-      .pets__heading {
+      gap:4.2rem;
+          .pets__slider {
+               display: flex;
+               flex-direction: row;
+               flex-wrap: wrap;
+               justify-content: center;
+               align-items: center;
+               gap:2rem;
+          .slider__wrapper{
+               justify-self: center;
+          }
+          
+          .slider__item{
+              margin-left: 1rem;
+          } 
+          .slider__control {
+              order:1;
+              
+             .slider__control_prev {
+                  margin-right: 3rem;
+             }
+             .slider__control_prev::after {
+                  content: '';
+             }
+             .slider__control_next {
+                  margin-left: 3rem;
+             }
+             .slider__control_next::after {
+             }
+         }
+         
+     }
+          .pets__heading {
           margin-top: 4.2rem;
-          font-size: $size-h3;
+          font-size: $h3-mobile;
           line-height: 130%;
           text-align: center;
      }
-     .slider__wrapper-ourpets{
+          .slider__wrapper-ourpets{
           .pets__cards {
           justify-content: center;
           }
@@ -348,6 +380,16 @@ button:not(:disabled):hover {
                display: none;
           }
      } 
-
+    
      }
+
+
+     .pets__buttons {
+          align-self: center;
+          margin-bottom: 4.2rem;
+         .pets__button {
+             max-width: 26rem;
+         }
+     }
+
 }
